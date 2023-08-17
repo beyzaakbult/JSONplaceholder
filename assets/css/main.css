@@ -1,0 +1,101 @@
+.card {
+    background: rgba(241, 235, 235, 0.966);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.card:not(.selected) {
+    opacity: 0.3;
+}
+.card:not(.selected):hover {
+    opacity: 0.6;
+}
+.card.selected {
+    opacity: 1;
+}
+.card:not(.selected) .details {
+    display: none;
+}
+.card a {
+    color: rgb(214, 132, 149);
+}
+.card-header {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card .details table tbody tr {
+    vertical-align: top;
+}
+.card-subheader {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.view {
+    width: 100%;
+}
+.view .view-left {
+    padding-left: 3rem;
+    vertical-align: top;
+    width: 30%;
+    min-width: 20rem;
+}
+.view .view-right {
+    padding-left:5rem;
+    padding-right:5rem;
+    vertical-align: top;
+    width: 70%;
+    min-width: 40rem;
+}
+.header-left {
+    text-align: start;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+.header-right {
+    padding-left:5rem;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+.user-posts {
+    width: 100%;
+}
+.select-user-message:not(.hidden) {
+    margin-top: 10rem;
+    color:darkgray;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.hidden {
+    display: none !important;
+}
+.post-comments {
+    padding: 0.5rem
+}
+.comment-card {
+    border-top: 1px solid rgb(214, 132, 149);
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+.comment-name {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.comment-email {
+    margin-bottom: 0.5rem;
+}
+.comment-text {
+    padding-bottom:0.5rem;
+    padding-top:0.5rem;
+    font-style: italic;
+}
+.comment-count {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
